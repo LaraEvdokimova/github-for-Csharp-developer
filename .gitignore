@@ -1,32 +1,95 @@
-# Prerequisites
-*.d
+# Created by https://www.gitignore.io/api/osx,maven,jekyll,windows,mavensmate
+# Edit at https://www.gitignore.io/?templates=osx,maven,jekyll,windows,mavensmate
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+### Jekyll ###
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
 
-# Precompiled Headers
-*.gch
-*.pch
+### Maven ###
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+.flattened-pom.xml
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+### MavensMate ###
+#Sublime Text exclusions
+*.sublime-workspace
+*.sublime-project
+*.sublime-settings
 
-# Fortran module files
-*.mod
-*.smod
+#MavensMate exclusions
+config/*
+mm.log
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+#OPTIONAL Apex scripts exclusion
+# - Rule 1 excludes the contents of the apex-scripts folder
+# - Rule 2 adds in NAMED apex scripts
+# Together: excludes scripts run though MavensMate’s
+#  execute anonymous functionality, while keeping named scripts
+apex-scripts/*
+!apex-scripts/*.cls
 
-# Executables
-*.exe
-*.out
-*.app
+### OSX ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# End of https://www.gitignore.io/api/osx,maven,jekyll,windows,mavensmate
